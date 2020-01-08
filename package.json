@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-v2",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michalswiatlowski/portfolio-v2.git"
+  },
+  "author": "Michal Swiatlowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michalswiatlowski/portfolio-v2/issues"
+  },
+  "homepage": "https://github.com/michalswiatlowski/portfolio-v2#readme",
+  "devDependencies": {
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.5"
+  }
+}
