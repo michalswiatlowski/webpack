@@ -11,15 +11,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        include: path.resolve(__dirname, 'src'),
-        use: [
-          { loader: "style-loader" },
-          { loader: "css-loader" },
-          { loader: "sass-loader" }
-        ]
-      },
-      {
         test: /\.html$/,
         use: ["html-loader"],
       },
@@ -33,17 +24,17 @@ module.exports = {
             esModule: false
           }
         }
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          }
+        }
       }
-      // {
-      //   test: /\.js$/,
-      //   exclude: /node_modules/,
-      //   use: {
-      //     loader: 'babel-loader',
-      //     options: {
-      //       presets: ['@babel/preset-env'],
-      //     },
-      //   },
-      // },
     ]
   }
 };
